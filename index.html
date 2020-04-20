@@ -9,32 +9,6 @@
   <script type="text/javascript" src="js/main.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet" type="text/css">
-  <script>
-    function initMap() {
-      var latlng = new google.maps.LatLng(35.695682, 139.688580);//中心の緯度, 経度
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,//ズームの調整
-        center: latlng//上で設定した中心
-      });
-      var marker = new google.maps.Marker({
-        position: latlng,
-        map: map
-      });
-
-      /*=========ここから追加=========*/
-      var mapStyle = [{
-        "stylers": [{
-          "saturation": -100
-        }]
-      }];
-      var mapType = new google.maps.StyledMapType(mapStyle);
-      map.mapTypes.set('GrayScaleMap', mapType);
-      map.setMapTypeId('GrayScaleMap');
-      /*=========ここまで追加=========*/
-    }
-
-  </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUw60gtJavpQfN8s6EkhMX2U2omsv7msM&callback=initMap">
   </script>
 </head>
 
@@ -147,7 +121,7 @@
 
       </div>
       <div class="about_map">
-        <div id="map"></div>
+        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.2500368720107!2d139.686456015509!3d35.69546418019095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f2d488333f71%3A0x5a4724f7292e4ebb!2z44CSMTYwLTAwMjMg5p2x5Lqs6YO95paw5a6_5Yy66KW_5paw5a6_77yW5LiB55uu77yS77yW4oiS77yR77yRIOaIkOWtkOWdguODj-OCpOODhA!5e0!3m2!1sja!2sjp!4v1587393617813!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
       </div>
       <div class="message">
         <a href="#1">
@@ -207,7 +181,7 @@
     </div>
   </div>
   <div class="section7">
-    <div class="section7_content"><img src="svg/footer_logo.svg" width="200px" height="100px">
+    <div class="section7_content"><img src="svg/footer_logo.svg" width="240px" height="100px">
       <p>© Copyright 2020 株式会社BINKS. All rights reserved.</p>
     </div>
     <div class="section7_bg"></div>

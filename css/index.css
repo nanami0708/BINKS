@@ -23,18 +23,25 @@ a:active {
 .section1 .header {
   position: fixed;
   width: 100vw;
-  height: 80px;
+  height: 60px;
   z-index: 2;
 }
 
 .section1 .header .logo {
   margin-top: 30px;
   margin-left: 40px;
-  width: 160px;
+  width: 140px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .section1 .header .logo img {
-  width: 160px;
+  width: 130px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section2 {
@@ -408,6 +415,13 @@ a:active {
   background-color: grey;
 }
 
+.section5 iframe {
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 .section5 .message {
   position: relative;
   margin-top: 120px;
@@ -621,6 +635,14 @@ a:active {
 
 @media screen and (max-width: 768px) {
   /*iPad向記述*/
+  .section1 .header .logo {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 110px;
+  }
+  .section1 .header .logo img {
+    width: 100px;
+  }
   .section2 .section2_content .box2 {
     width: 65%;
     height: 300px;
@@ -664,12 +686,12 @@ a:active {
 @media screen and (max-width: 599px) {
   /*スマートホン向記述*/
   .section1 .header .logo {
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80px;
   }
   .section1 .header .logo img {
-    width: 120px;
+    width: 75px;
   }
   .section2 .box1 {
     width: 80vw;
@@ -805,7 +827,7 @@ a:active {
     top: 50px;
   }
   .section7 .section7_content img {
-    width: 120px;
+    width: 150px;
   }
   .section7 .section7_content p {
     font-size: 8px;
