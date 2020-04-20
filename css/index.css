@@ -39,17 +39,17 @@ a:active {
 
 .section2 {
   width: 100%;
-  height: 140vh;
+  position: relative;
+  background-color: #ff8b00;
 }
 
 .section2 .box1 {
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   padding: 2em 1em;
   width: 90vw;
   max-width: 700px;
-  margin: auto;
   color: #000;
   background: #fff;
   border: solid 2px #000;
@@ -76,7 +76,7 @@ a:active {
 
 .section2 .heading {
   position: relative;
-  top: 480px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 250px;
@@ -111,14 +111,15 @@ a:active {
 }
 
 .section2 .section2_content {
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 90vw;
   max-width: 900px;
-  margin-top: 500px;
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .section2 .section2_content .box2 {
@@ -173,16 +174,17 @@ a:active {
 .section2::after {
   content: "";
   position: absolute;
+  top: -8%;
   left: 0;
   width: 100%;
-  height: 140%;
+  height: 116%;
   background-color: #ff8b00;
-  transform: skew(0, -6deg);
+  transform: skew(0, -5deg);
   z-index: -1;
 }
 
 .section3 {
-  height: 150vh;
+  position: relative;
 }
 
 .section3 .heading {
@@ -223,6 +225,7 @@ a:active {
 
 .section3 .section3_content_pc {
   display: block;
+  position: relative;
 }
 
 .section3 .section3_content_pc img {
@@ -230,7 +233,8 @@ a:active {
   height: auto;
   max-width: 1000px;
   position: relative;
-  top: 300px;
+  padding-top: 300px;
+  padding-bottom: 200px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -240,12 +244,12 @@ a:active {
 }
 
 .section4 {
-  height: 80vh;
+  position: relative;
+  background-color: #ff8b00;
 }
 
 .section4 .heading {
   position: relative;
-  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 250px;
@@ -281,13 +285,14 @@ a:active {
 
 .section4 .section4_content {
   position: relative;
-  top: 100px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   width: 90vw;
   max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .section4 .case {
@@ -297,21 +302,21 @@ a:active {
 .section4::before {
   content: "";
   position: absolute;
-  left: 0;
+  top: -15%;
   width: 100%;
-  height: 80%;
+  height: 130%;
   background-color: #ff8b00;
-  transform: skew(0, -6deg);
+  transform: skew(0, -5deg);
   z-index: -1;
 }
 
 .section5 {
-  height: 100vh;
+  position: relative;
 }
 
 .section5 .heading {
   position: relative;
-  top: 200px;
+  margin-top: 200px;
   left: 50%;
   transform: translateX(-50%);
   width: 250px;
@@ -347,7 +352,7 @@ a:active {
 
 .section5 .section5_content {
   position: relative;
-  top: 300px;
+  margin-top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 90vw;
@@ -405,7 +410,7 @@ a:active {
 
 .section5 .message {
   position: relative;
-  top: 120px;
+  margin-top: 120px;
   left: 50%;
   transform: translateX(-50%);
   border: solid 2px #000;
@@ -427,12 +432,12 @@ a:active {
 }
 
 .section6 {
-  height: 160vh;
+  position: relative;
 }
 
 .section6 .heading {
   position: relative;
-  top: 350px;
+  margin-top: 250px;
   left: 50%;
   transform: translateX(-50%);
   width: 250px;
@@ -468,7 +473,8 @@ a:active {
 
 .section6 .contactform {
   position: relative;
-  top: 400px;
+  margin-top: 40px;
+  margin-bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 90vw;
@@ -579,14 +585,14 @@ a:active {
 }
 
 .section7 {
-  height: 40vh;
+  height: 350px;
   overflow: hidden;
 }
 
 .section7 .section7_content {
   position: relative;
   z-index: 1;
-  top: 20vh;
+  top: 200px;
 }
 
 .section7 .section7_content img {
@@ -597,6 +603,7 @@ a:active {
 
 .section7 .section7_content p {
   margin-top: 10px;
+  margin-bottom: 5px;
   text-align: center;
   color: #fff;
   font-size: 12px;
@@ -605,65 +612,15 @@ a:active {
 
 .section7 .section7_bg {
   width: 100%;
-  height: 40vh;
+  height: 350px;
   background-color: #004898;
   transform: skew(0, -6deg);
   margin-top: 0px;
   z-index: -1;
 }
 
-@media screen and (max-width: 1024px) {
-  /*iPad Pro向記述*/
-  .section2 {
-    height: 100vh;
-  }
-  .section2 .heading {
-    top: 400px;
-  }
-  .section2 .section2_content {
-    width: 95vw;
-  }
-  .section2 .section2_content .box2 {
-    width: 47%;
-  }
-  .section2::after {
-    height: 100%;
-  }
-  .section3 {
-    height: 100vh;
-  }
-  .section4 {
-    height: 50vh;
-  }
-  .section4::before {
-    height: 50%;
-  }
-  .section5 {
-    height: 80vh;
-  }
-  .section6 {
-    height: 100vh;
-  }
-  .section7 {
-    height: 30vh;
-  }
-  .section7 .section7_content {
-    top: 15vh;
-  }
-  .section7 .section7_bg {
-    height: 30vh;
-  }
-}
-
 @media screen and (max-width: 768px) {
   /*iPad向記述*/
-  .section2 {
-    height: 160vh;
-  }
-  .section2 .section2_content {
-    display: block;
-    margin-top: 400px;
-  }
   .section2 .section2_content .box2 {
     width: 65%;
     height: 300px;
@@ -676,35 +633,25 @@ a:active {
     font-size: 15px;
   }
   .section2 .section2_content .box2 .more {
-    margin-top: 220px;
+    margin-top: 230px;
     margin-left: 75%;
   }
-  .section2::after {
-    height: 160%;
-  }
-  .section4 {
-    height: 100vh;
+  .section4 .section4_content {
+    top: 0px;
+    padding-bottom: 0px;
   }
   .section4::before {
-    height: 100%;
+    top: -5%;
+    height: 110%;
   }
-  .section5 {
-    height: 130vh;
+  .section5 .heading {
+    margin-top: 150px;
   }
   .section5 .section5_content {
-    top: 250px;
+    margin-top: 50px;
   }
   .section5 .about_map {
-    margin-top: 80px;
-  }
-  .section6 {
-    height: 120vh;
-  }
-  .section6 .heading {
-    top: 200px;
-  }
-  .section6 .contactform {
-    top: 250px;
+    margin-top: 50px;
   }
   .heading svg {
     transform: scale(0.7, 0.7);
@@ -724,9 +671,6 @@ a:active {
   .section1 .header .logo img {
     width: 120px;
   }
-  .section2 {
-    height: 180vh;
-  }
   .section2 .box1 {
     width: 80vw;
   }
@@ -735,12 +679,6 @@ a:active {
     letter-spacing: 1px;
     line-height: 4em;
   }
-  .section2 .heading {
-    top: 500px;
-  }
-  .section2 .section2_content {
-    margin-top: 500px;
-  }
   .section2 .section2_content .box2 {
     width: 92%;
     margin-top: 40px;
@@ -748,38 +686,32 @@ a:active {
   }
   .section2 .section2_content .box2 .more {
     margin-top: 160px;
-    margin-left: 70%;
+    margin-left: 68%;
   }
   .section2::after {
-    height: 175%;
-  }
-  .section3 {
-    height: 250vh;
-  }
-  .section3 .heading {
-    top: 150px;
+    top: -3%;
+    height: 106%;
   }
   .section3 .section3_content_pc {
     display: none;
   }
   .section3 .section3_content_sp {
     display: block;
+    padding-bottom: 80px;
   }
   .section3 .section3_content_sp img {
-    width: 90vw;
+    width: 80vw;
     height: auto;
     max-width: 340px;
     position: relative;
-    top: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 40px;
   }
-  .section4 .heading {
-    top: 60px;
-  }
-  .section4 .section4_content {
-    top: 70px;
+  .section3 .section3_content_sp .chosei {
+    width: 90vw;
+    padding-top: 250px;
   }
   .section4 .case {
     width: 90vw;
@@ -789,14 +721,11 @@ a:active {
     width: 100%;
     height: 100%;
   }
-  .section5 {
-    height: 150vh;
-  }
   .section5 .heading {
-    top: 80px;
+    margin-top: 100px;
   }
   .section5 .section5_content {
-    top: 100px;
+    margin-top: 0px;
   }
   .section5 .company-list {
     font-size: 12px;
@@ -811,7 +740,8 @@ a:active {
     padding: 20px 0 12px 130px;
   }
   .section5 .about_map {
-    margin-top: 60px;
+    margin-top: 30px;
+    height: 300px;
   }
   .section5 .message p {
     margin: 20px 30px;
@@ -824,11 +754,11 @@ a:active {
     margin-right: 30px;
   }
   .section6 .heading {
-    top: 20px;
+    margin-top: 150px;
   }
   .section6 .contactform {
-    top: 50px;
     width: 92vw;
+    margin-top: 0px;
   }
   .section6 .contactform .cp_iptxt {
     width: 84%;
@@ -864,11 +794,15 @@ a:active {
     font-size: 35px;
     letter-spacing: 0.1em;
   }
+  .section7 {
+    height: 200px;
+  }
   .section7 .section7_bg {
-    margin-top: -60px;
+    height: 200px;
+    margin-top: -100px;
   }
   .section7 .section7_content {
-    top: 90px;
+    top: 50px;
   }
   .section7 .section7_content img {
     width: 120px;
@@ -895,69 +829,11 @@ a:active {
 
 @media screen and (max-width: 600px) and (max-height: 736px) {
   /*高さが736px以下のとき（iPhone678 plusなど）*/
-  .section2 {
-    height: 200vh;
-  }
-  .section2::after {
-    height: 190%;
-  }
-  .section3 {
-    height: 280vh;
-  }
-  .section3 .heading {
-    top: 100px;
-  }
   .section3 .section3_content_sp img {
-    top: 100px;
+    width: 70vw;
   }
-  .section4 {
-    height: 110vh;
-  }
-  .section4::before {
-    height: 110%;
-  }
-  .section5 {
-    height: 160vh;
-  }
-  .section6 {
-    height: 130vh;
-  }
-}
-
-@media screen and (max-width: 600px) and (max-height: 667px) {
-  /*高さが667px以下のとき（iPhone678など）*/
-  .section2 {
-    height: 220vh;
-  }
-  .section2::after {
-    height: 210%;
-  }
-  .section3 {
-    height: 290vh;
-  }
-  .section3 .heading {
-    top: 100px;
-  }
-  .section3 .section3_content_sp img {
-    top: 100px;
-  }
-  .section4 {
-    height: 130vh;
-  }
-  .section4::before {
-    height: 130%;
-  }
-  .section5 {
-    height: 180vh;
-  }
-  .section6 {
-    height: 150vh;
-  }
-  .section7 .section7_content {
-    top: 70px;
-  }
-  .section7 .section7_content img {
-    height: 70px;
+  .section3 .section3_content_sp .chosei {
+    width: 95vw;
   }
 }
 
