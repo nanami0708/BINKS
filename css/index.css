@@ -17,14 +17,15 @@ a:active {
 }
 
 .section1 {
-  height: 120vh;
+  height: 100vh;
+  background-color: #004898;
 }
 
 .section1 .header {
   position: fixed;
   width: 100vw;
   height: 60px;
-  z-index: 2;
+  z-index: 10;
 }
 
 .section1 .header .logo {
@@ -39,15 +40,87 @@ a:active {
 
 .section1 .header .logo img {
   width: 130px;
+  padding-top: 3px;
+  position: relative;
+  left: 48%;
+  transform: translateX(-50%);
+}
+
+.section1 .top_img {
+  overflow: hidden;
+}
+
+.section1 .top_img .scroll_icon {
+  position: absolute;
+  z-index: 4;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section1 .top_img .scroll_icon img {
+  position: relative;
+  bottom: -0.5px;
+  vertical-align: bottom;
+}
+
+.section1 .top_img .slogan_pc {
+  display: block;
+  position: absolute;
+  margin-left: 100px;
+  bottom: 50px;
+  z-index: 3;
+}
+
+.section1 .top_img .slogan_sp {
+  display: none;
+}
+
+.section1 .top_img .wave_pc {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  bottom: 0px;
+  object-fit: fill;
+}
+
+.section1 .top_img .wave_pc svg {
+  height: 100vh;
+  width: 100%;
+}
+
+.section1 .top_img .wave_tab {
+  display: none;
+}
+
+.section1 .top_img .wave_sp {
+  display: none;
+}
+
+.section1 .top_img .top_bg {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  overflow: hidden;
+}
+
+.section1 .top_img .top_bg img {
+  height: 100vh;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  vertical-align: bottom;
 }
 
 .section2 {
   width: 100%;
   position: relative;
   background-color: #ff8b00;
+  padding-top: 15vh;
 }
 
 .section2 .box1 {
@@ -56,7 +129,7 @@ a:active {
   transform: translateX(-50%);
   padding: 2em 1em;
   width: 90vw;
-  max-width: 700px;
+  max-width: 800px;
   color: #000;
   background: #fff;
   border: solid 2px #000;
@@ -70,7 +143,7 @@ a:active {
   letter-spacing: 3px;
   line-height: 3em;
   color: #000000;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bolder;
 }
 
@@ -633,6 +706,44 @@ a:active {
   z-index: -1;
 }
 
+@media screen and (max-width: 1024px) {
+  .section1 .top_img .slogan_pc {
+    display: block;
+    position: absolute;
+    margin-left: 50px;
+    bottom: 100px;
+    z-index: 3;
+  }
+  .section1 .top_img .slogan_pc img {
+    width: 90%;
+  }
+  .section1 .top_img .slogan_sp {
+    display: none;
+  }
+  .section1 .top_img .wave_pc {
+    display: none;
+  }
+  .section1 .top_img .wave_tab {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    overflow: hidden;
+  }
+  .section1 .top_img .wave_tab img {
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    vertical-align: bottom;
+  }
+  .section1 .top_img .wave_sp {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /*iPad向記述*/
   .section1 .header .logo {
@@ -685,6 +796,41 @@ a:active {
 
 @media screen and (max-width: 599px) {
   /*スマートホン向記述*/
+  .section1 .top_img .slogan_pc {
+    display: none;
+  }
+  .section1 .top_img .slogan_sp {
+    display: block;
+    position: absolute;
+    margin-left: 20px;
+    bottom: 70px;
+    z-index: 3;
+  }
+  .section1 .top_img .wave_pc {
+    display: none;
+  }
+  .section1 .top_img .wave_tab {
+    display: none;
+  }
+  .section1 .top_img .wave_sp {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+  }
+  .section1 .top_img .wave_sp img {
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    vertical-align: bottom;
+  }
+  .section1 .top_img .top_bg {
+    top: -100px;
+  }
   .section1 .header .logo {
     margin-top: 10px;
     margin-left: 10px;

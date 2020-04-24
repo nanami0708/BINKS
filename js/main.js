@@ -1,18 +1,18 @@
 //pagetop
-$(function () {
-  var header = $('.header');
-  header.hide();
-  //スクロールが100に達したらボタン表示
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 600) {
-      //ボタンの表示方法
-      header.fadeIn();
-    } else {
-      //ボタンの非表示方法
-      header.fadeOut();
-    }
-  });
-});
+// $(function () {
+//   var header = $('.header');
+//   header.hide();
+//   //スクロールが100に達したらボタン表示
+//   $(window).scroll(function () {
+//     if ($(this).scrollTop() > 600) {
+//       //ボタンの表示方法
+//       header.fadeIn();
+//     } else {
+//       //ボタンの非表示方法
+//       header.fadeOut();
+//     }
+//   });
+// });
 
 
 $(function () {
